@@ -156,3 +156,27 @@ Un analizador estático detecta patrones de estilo y comparaciones potencialment
 - `docs/checklist.md` — CHK-13–CHK-26 y CHK-31–CHK-34.
 - `docs/hallazgos.md` — 12 registros preliminares de Fase C, paso 1.
 - `evidencias/lint-inicial.txt` — cinco errores y cero advertencias según salida de VS Code aportada por el estudiante.
+
+## Seguimiento de correcciones
+
+Fecha: 15 de noviembre de 2026.
+
+Se aplicaron cuatro correcciones técnicas de bajo
+riesgo correspondientes a los hallazgos ESL-01,
+ESL-03, ESL-04 y ESL-05.
+
+La comparación esVip == true permanece sin modificar
+hasta confirmar el contrato de tipos del parámetro.
+
+Los comentarios técnicos propuestos sobre ESL-02
+y HUM-03 fueron compartidos con Luis. El autor
+comunicó que Luis manifestó su conformidad.
+
+No se documenta una revisión integral de los
+12 hallazgos por parte del revisor.
+
+El análisis final de ESLint registró un error,
+frente a los cinco errores iniciales.
+
+Los hallazgos relacionados con reglas de negocio
+permanecen pendientes de confirmación.
