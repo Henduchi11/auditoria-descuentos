@@ -95,3 +95,41 @@ Para cerrar formalmente la inspección por pares se deberá indicar la **fecha r
 - Preguntas de auditoría: `docs/checklist.md` (v1.1; CHK-13 a CHK-26, CHK-31 a CHK-34).
 
 **Estado final del paso 1:** análisis preliminar documentado; **inspección por pares, decisiones y correcciones pendientes**.
+
+## Seguimiento posterior a las correcciones
+
+Fecha: 15 de noviembre de 2026.
+
+Se realizó un segundo análisis estático utilizando
+la misma configuración de ESLint.
+
+| ID | Estado final | Justificación |
+|---|---|---|
+| ESL-01 | Corregido | Se reemplazó var por let |
+| ESL-02 | Pendiente | Requiere confirmar el tipo booleano de esVip |
+| ESL-03 | Corregido | Se agregaron llaves al primer if |
+| ESL-04 | Corregido | Se agregaron llaves al segundo if |
+| ESL-05 | Corregido | Se reemplazó var por const |
+| HUM-01 | Pendiente | Falta definir el rechazo de porcentajes inválidos |
+| HUM-02 | Pendiente | Falta confirmar las validaciones de entrada |
+| HUM-03 | Pendiente | Falta definir el límite del descuento acumulado |
+| HUM-04 | Pendiente | Falta confirmar el beneficio VIP |
+| HUM-05 | Pendiente | Falta definir las promociones autorizadas |
+| HUM-06 | Pendiente | Falta definir la política de redondeo |
+| HUM-07 | Pendiente | Falta confirmar el alcance de la presentación |
+
+### Comparación de resultados
+
+- Análisis inicial: 5 errores y 0 advertencias.
+- Análisis final: 1 error y 0 advertencias.
+- Errores corregidos: 4.
+- Reducción de errores: 80 %.
+
+El error restante corresponde a la regla eqeqeq.
+
+Las reglas de negocio no fueron modificadas porque
+existen decisiones pendientes de confirmación.
+
+Evidencias:
+- evidencias/lint-inicial.txt
+- evidencias/lint-final.txt
